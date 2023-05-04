@@ -240,6 +240,7 @@ services:
     user: "0:0"
     volumes:
       - .:/sources
+      - ./:/opt/airflow
 
   airflow-cli:
     <<: *airflow-common
